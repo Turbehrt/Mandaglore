@@ -7,4 +7,4 @@ http://mandragore.bnf.fr/
 See also http://api.bnf.fr and http://gallicastudio.bnf.fr/
 
 
-"Mandaglore" is the Middle-french word for mandrake (hence "main-de-gloire").
+"Mandaglore" is the Middle-french word for mandrake (hence "main-de-gloire", while modern French reverted to "mandragore").
