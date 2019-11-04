@@ -1,12 +1,18 @@
-Nonis Martiis
+# Nonis Martiis
+
+---------
+***Corpus mis en ligne sur le site api.bnf.fr le 28/10/2019 à l'adresse http://api.bnf.fr/mandragore-echantillon-segmente-2019.***
+La page d'accueil contient une présentation plus détaillée.
+
+---------
 
 En mars 2019, huit manuscrits (et non sept, finalement !) ont fait l'objet d'une segmentation manuelle (enluminures et tags) dans le cadre d'un stage d'un mois.
-Ces données sont mises en ligne ici (et prochainement sur le site api.bnf.fr sous la licence ouverte etalab).
+Ces données sont mises en ligne sur le site [api.bnf.fr](http://api.bnf.fr/mandragore-echantillon-segmente-2019) sous la licence ouverte etalab.
 
 On propose trois formats de données : données brutes de l'application VGG Image Annotator (utilisée pour la segmentation), données ordonnées et enrichies des métadonnées de Mandragore au format CSV, annotations IIIF exploitables par le visualiseur Mirador.
 
 
-*** Raw VIA Data ***
+## Raw VIA Data
 
 Pour chaque enluminure, appelée par l'URL de l'API IIIF Images de Gallica (comprenant son identifiant ark qualifié et ses coordonnées), on enregistre
 - un seul attribut de fichier, correspondant à l'identifiant numérique de l'enluminure dans Mandragore (transformable en ark)
@@ -18,13 +24,13 @@ Attention, tous les tags ne sont pas localisés (certains ne sont pas localisabl
 On fournit également un fichier de modèle d'attributs permettant de poursuivre la segmentation dans VGG Image Annotator (version utilisée : 2.0.5).
 
 
-*** Sorted Data ***
+## Sorted Data
 
 Ces données font l'objet d'un dictionnaire spécifique.
 On se reportera également à la présentation et au dictionnaire des données du dump Mandragore, accessible sur http://api.bnf.fr/dumps-mandragore.
 
 
-*** Mirador Annotations ***
+## Mirador Annotations
 
 Pour chacun des manuscrits segmentés, on fournit quatre fichiers d'annotations Mirador (inspirés du formalisme IIIF*).
 
@@ -38,4 +44,4 @@ Pour les fichiers "Mixed", on utilise le formalisme SVG pour afficher le contour
 
 Les fichiers JSON, structurés selon le formalisme adapté des spécifications de l'API IIIF Présentation*, intègrent des identifiants non affichés par Mirador. On a choisi d'identifier chaque enluminure par l'URL actionnable de sa notice dans Mandragore et chaque tag par l'URL de la notice de l'enluminure complété d'un qualificatif de granularité fictif. Actuellement ce qualificatif n'est pas pris en charge par l'application Mandragore.
 
-* L'API IIIF Présentation 2.1.1 (https://iiif.io/api/presentation/2.1/) prescrit d'établir un fichier d'annotation par cannevas (par page), appelés dans le manifeste d'ensemble du document numérique. Le respecter strictement nécessite la mise en ligne d'un grand nombre de fichiers : on a préféré dans un premier temps le formalisme plus léger des fichiers d'annotation Mirador.
+* L'API IIIF Présentation 2.1.1 (https://iiif.io/api/presentation/2.1/) prescrit d'établir un fichier d'annotation par canevas (par page), appelés dans le manifeste d'ensemble du document numérique. Le respecter strictement nécessite la mise en ligne d'un grand nombre de fichiers : on a préféré dans un premier temps le formalisme plus léger des fichiers d'annotation Mirador.
